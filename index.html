@@ -6,6 +6,7 @@
   <title>James Speakman</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
 
@@ -17,10 +18,10 @@
       <h1 class="title">James Speakman</h1>
       <h2 class="subtitle">A motivated, passionate, and hard-working conjoint student wanting to improve his technical skills in anyway possible.</h2>
       <div class="block">
-        <a href="" class="button is-primary is-inverted is-outlined">About Me</a>
-        <a href="" class="button is-primary is-inverted is-outlined">Download My CV</a>
-        <a href="" class="button is-primary is-inverted is-outlined">My Projects</a>
-        <a href="" class="button is-primary is-inverted is-outlined">Photos</a>
+        <a href="index.html" class="button is-info is-inverted is-outlined">About Me</a>
+        <a href="James CV 2020 - 2 Page (Software).pdf" class="button is-info is-inverted is-outlined">Download My CV</a>
+        <a href="project.html" class="button is-info is-inverted is-outlined">My Projects</a>
+        <a href="photos.html" class="button is-info is-inverted is-outlined">Photos</a>
       </div>
     </div>
   </div>
@@ -45,8 +46,8 @@
           </p>
           <br>
           <p>
-            In the meantime, I am current a student consultant for 180 Degrees Consulting - The world’s largest social
-            impact consultancy, and also participate in case competitions run by the Management Consulting Club
+            In the meantime, I am currently a student consultant for 180 Degrees Consulting - The world’s largest social
+            impact consultancy. I also participate in case competitions run by the Management Consulting Club
             at the university to try and gain experience of working cases, presenting, and communicating/working with a
             team.
           </p>
@@ -60,17 +61,17 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a href=""><i class="fa fa-facebook"></i>Facebook</a>
+            <a href="mailto:james.a.speakman@gmail.com"><i class="far fa-envelope"></i>Email</a>
           </span>
         </p>
         <p class="card-footer-item">
           <span>
-            <a href=""><i class="fa fa-linkedin"></i>LinkedIn</a>
+            <a href="https://www.linkedin.com/in/james-speakman-3b1027181/"><i class="fab fa-linkedin"></i>LinkedIn</a>
           </span>
         </p>
         <p class="card-footer-item">
           <span>
-            <a href=""><i class="fa fa-github"></i>GitHub</a>
+            <a href="https://github.com/jspe183"><i class="fab fa-github"></i>GitHub</a>
           </span>
         </p>
       </footer>
@@ -101,36 +102,7 @@
   </div>
 </section>
 
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-  }
-
-  setInterval(()=> plusSlides(1), 3000)
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
